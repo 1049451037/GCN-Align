@@ -6,15 +6,16 @@ Initial datasets are from [JAPE](https://github.com/nju-websoft/JAPE).
 
 # Environment
 
-* Python>=3.5
-* Tensorflow>=1.10.1
-* Scipy>=1.1.0
+* python>=3.5
+* tensorflow>=1.10.1
+* scipy>=1.1.0
+* networkx>=2.2
 
 # Running
 
-* Modify language or some other settings in *include/Config.py*
-* cd to the directory of *main.py*
-* run *main.py*
+```
+python train.py --lang zh_en
+```
 
 # Citation
 
