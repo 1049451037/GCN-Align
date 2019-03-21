@@ -194,13 +194,13 @@ def get_weighted_adj(e, KG):
         if tri[0] == tri[2]:
             continue
         if (tri[0], tri[2]) not in M:
-            M[(tri[0], tri[2])] = r2if[tri[1]]**0.5
+            M[(tri[0], tri[2])] = max(r2if[tri[1]], 0.3)
         else:
-            M[(tri[0], tri[2])] += r2if[tri[1]]**0.5
+            M[(tri[0], tri[2])] += max(r2if[tri[1]], 0.3)
         if (tri[2], tri[0]) not in M:
-            M[(tri[2], tri[0])] = r2f[tri[1]]**0.5
+            M[(tri[2], tri[0])] = max(r2f[tri[1]], 0.3)
         else:
-            M[(tri[2], tri[0])] += r2f[tri[1]]**0.5
+            M[(tri[2], tri[0])] += max(r2f[tri[1]], 0.3)
     row = []
     col = []
     data = []

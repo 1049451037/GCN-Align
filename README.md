@@ -1,4 +1,4 @@
-# MKE
+# GCN-Align
 
 Code of the paper: ***Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks***.
 
